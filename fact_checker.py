@@ -132,6 +132,9 @@ def build_whatsapp_summary(result: Dict[str, Any]) -> str:
                     lines.append(f"• {nome} ({dt})")
         lines.append("")
 
+    lines.append(
+        "⚖️ *Atenção:* Criar ou espalhar fake news é crime previsto no Código Eleitoral (arts. 323 e 326-A) e no Código Penal (arts. 138 a 140)."
+    )
     return "\n".join(lines).strip()
 
 

@@ -290,7 +290,30 @@
     .hero-footnote {
       font-size: 0.76rem;
       color: var(--ink-muted);
-      margin-bottom: 1.65rem;
+      margin-bottom: 1.15rem;
+    }
+
+    .crime-alert-banner {
+      background: var(--stamp-fake-bg);
+      border: 1.5px solid var(--stamp-fake);
+      border-left: 5px solid var(--stamp-fake);
+      border-radius: 8px;
+      padding: 0.75rem 0.95rem;
+      max-width: 490px;
+      margin-bottom: 1.35rem;
+      font-size: 0.8rem;
+      color: var(--ink);
+      line-height: 1.48;
+    }
+
+    .crime-alert-banner strong {
+      color: var(--stamp-fake);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0.2rem;
     }
 
     /* Quick sample pills in Hero */
@@ -1346,6 +1369,11 @@
           Gratuito · Sem cadastro · Funciona com texto, áudios e vídeos
         </div>
 
+        <div class="crime-alert-banner">
+          <strong>⚖️ Alerta Legal: Espalhar Fake News é Crime</strong>
+          Criar, divulgar ou compartilhar informações falsas nas eleições ou contra a honra de terceiros é crime previsto no <strong>Código Eleitoral (arts. 323 e 326-A)</strong> e no <strong>Código Penal (arts. 138 a 140)</strong>, com penas que podem chegar a reclusão e multa.
+        </div>
+
         <div class="quick-samples">
           <div class="quick-samples-label">Exemplos prontos para testar agora:</div>
           <div id="samplesContainer" class="sample-pills-wrap"></div>
@@ -1643,6 +1671,13 @@
       <div class="faq-item">
         <h4>Quais fontes são priorizadas na checagem?</h4>
         <p>As verificações priorizam agências signatárias da rede internacional de fact-checking (Fato ou Fake/G1, Agência Lupa, Aos Fatos, Estadão Verifica, Comprova), órgãos oficiais (TSE, IBGE, STF) e imprensa profissional.</p>
+      </div>
+      <div class="faq-item" style="grid-column: 1 / -1; border-left: 4px solid var(--stamp-fake); background: var(--stamp-fake-bg);">
+        <h4 style="color: var(--stamp-fake);">⚖️ Por que espalhar Fake News é crime no Brasil?</h4>
+        <p style="color: var(--ink-soft);">
+          A legislação brasileira pune tanto quem cria quanto quem compartilha desinformação sabendo ou devendo saber que é falsa:
+          <strong>Código Eleitoral (Lei nº 4.737/1965, art. 323 e art. 326-A, § 3º)</strong> prevê detenção e reclusão de 2 a 8 anos para divulgação de fatos inverídicos capazes de influenciar o eleitorado ou imputar falsamente crime a candidatos; o <strong>Código Penal (arts. 138 a 141)</strong> pune calúnia, difamação e injúria com pena triplicada quando cometidas pelas redes sociais; e a <strong>Resolução TSE nº 23.732/2024</strong> proíbe o uso de inteligência artificial (deepfakes) para manipular voz ou imagem de candidatos.
+        </p>
       </div>
     </div>
   </section>

@@ -75,12 +75,22 @@ class VerazPDF(FPDF):
         self.rect(0, 0, 210, 297, style="F")
 
     def footer(self):
-        self.set_y(-11)
-        self.set_veraz_font("Mono", "", 7.5)
+        self.set_y(-13)
+        self.set_veraz_font("Mono", "B", 6.8)
+        self.set_text_color(201, 53, 44)
+        self.cell(
+            0,
+            4,
+            "ALERTA LEGAL: Espalhar fake news e crime previsto no Codigo Eleitoral (arts. 323 e 326-A) e Codigo Penal (arts. 138 a 140).",
+            align="C",
+            new_x="LMARGIN",
+            new_y="NEXT",
+        )
+        self.set_veraz_font("Mono", "", 7.2)
         self.set_text_color(112, 108, 100)
         self.cell(
             0,
-            6,
+            4,
             f"Veraz | Checagem Ponto a Ponto | Pagina {self.page_no()}",
             align="C",
         )
