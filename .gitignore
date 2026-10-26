@@ -1,0 +1,28 @@
+# Variáveis de ambiente e chaves de API (NUNCA versionar no GitHub)
+.env
+.env.*
+!.env.example
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# Arquivos temporários de mídia
+*.wav
+*.mp3
+*.ogg
+*.mp4
+*.webm
+*.mov
+temp_*
+cleaned_audio.wav
+
+# Pasta de documentos locais não relacionados
+Docs/
