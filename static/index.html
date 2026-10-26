@@ -45,6 +45,11 @@
       scroll-behavior: smooth;
     }
 
+    html, body {
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+
     body {
       font-family: var(--font-sans);
       background-color: var(--bg-cream);
@@ -1310,6 +1315,285 @@
 
     .error-toast.visible {
       display: block;
+    }
+
+    /* ================= RESPONSIVO MOBILE (IPHONE / ANDROID) ================= */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 0.75rem 1rem;
+      }
+
+      .brand-name {
+        font-size: 1.2rem;
+      }
+
+      .btn-dark-yellow {
+        padding: 0.45rem 0.85rem;
+        font-size: 0.78rem;
+      }
+
+      .hero-section {
+        padding: 1.5rem 1rem 2.25rem;
+      }
+
+      .hero-grid {
+        gap: 1.75rem;
+      }
+
+      .hero-title {
+        font-size: 2.15rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+      }
+
+      .hero-desc {
+        font-size: 0.94rem;
+        margin-bottom: 1.35rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+      }
+
+      .btn-hero-primary {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+      }
+
+      .link-how {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding: 0.4rem 0;
+      }
+
+      .crime-alert-banner {
+        max-width: 100%;
+        font-size: 0.78rem;
+        padding: 0.65rem 0.8rem;
+      }
+
+      .quick-samples {
+        max-width: 100%;
+      }
+
+      /* Celular no Mobile: remove borda pesada de 10px e notch para se integrar à tela do smartphone */
+      .phone-wrapper {
+        width: 100%;
+      }
+
+      .phone-frame {
+        max-width: 100%;
+        border: 1.5px solid var(--border-warm);
+        border-radius: 18px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      }
+
+      .phone-notch {
+        display: none;
+      }
+
+      .phone-header {
+        padding: 0.65rem 0.85rem;
+      }
+
+      .phone-body {
+        padding: 0.8rem;
+        gap: 0.75rem;
+      }
+
+      .wa-bubble-in {
+        padding: 0.75rem 0.8rem;
+      }
+
+      .mode-btn {
+        padding: 0.48rem 0.25rem;
+        font-size: 0.74rem;
+      }
+
+      .composer-textarea {
+        font-size: 0.88rem;
+        min-height: 85px;
+      }
+
+      .btn-send-verify {
+        padding: 0.75rem 0.9rem;
+        font-size: 0.86rem;
+      }
+
+      .wa-verdict-card {
+        padding: 0.85rem;
+      }
+
+      .wa-card-footer {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .wa-card-footer button,
+      .wa-card-footer a {
+        width: 100%;
+        text-align: center;
+        padding: 0.45rem;
+      }
+
+      /* Faixa de Exemplos */
+      .ticker-strip {
+        padding: 0.75rem 1rem;
+      }
+
+      .ticker-inner {
+        justify-content: flex-start;
+        gap: 1.35rem;
+      }
+
+      .ticker-item {
+        font-size: 0.86rem;
+      }
+
+      /* Como funciona */
+      .how-section {
+        margin: 2.25rem auto;
+        padding: 0 1rem;
+      }
+
+      .section-top-rule {
+        margin-bottom: 1.25rem;
+        padding-top: 1rem;
+      }
+
+      .section-heading {
+        font-size: 1.75rem;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+        background: transparent;
+        border: none;
+        gap: 0.75rem;
+      }
+
+      .step-cell {
+        border-right: none !important;
+        border: 1px solid var(--border-warm);
+        border-radius: 12px;
+        background: var(--bg-paper);
+        padding: 1.25rem 1.15rem;
+      }
+
+      .step-number {
+        font-size: 2.2rem;
+      }
+
+      /* Os Selos (Dark) */
+      .stamps-section {
+        padding: 2.5rem 1rem;
+        margin-top: 2.25rem;
+      }
+
+      .stamps-heading {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .stamps-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .stamp-explain-card {
+        padding: 1.25rem 1.1rem;
+      }
+
+      /* Detalhamento Ponto a Ponto */
+      .detailed-results-section {
+        padding: 0 1rem;
+        margin-bottom: 2.25rem;
+      }
+
+      .results-wrapper-card {
+        padding: 1.15rem 0.95rem;
+        box-shadow: 4px 4px 0px var(--ink);
+      }
+
+      .results-header-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.85rem;
+      }
+
+      .results-header-bar h2 {
+        font-size: 1.45rem;
+      }
+
+      .export-actions-group {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .export-actions-group button {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+      }
+
+      .scoreboard-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+      }
+
+      .score-pill {
+        padding: 0.65rem 0.75rem;
+      }
+
+      .score-pill .num {
+        font-size: 1.4rem;
+      }
+
+      .point-item-card {
+        padding: 1rem 0.9rem;
+      }
+
+      .point-quote {
+        font-size: 0.95rem;
+        padding: 0.65rem 0.75rem;
+      }
+
+      .point-analysis {
+        font-size: 0.88rem;
+      }
+
+      .point-truth {
+        font-size: 0.88rem;
+        padding: 0.75rem 0.85rem;
+      }
+
+      .source-badge {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+      }
+
+      /* FAQ e Rodapé */
+      .faq-section {
+        margin: 2.25rem auto;
+        padding: 0 1rem;
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
